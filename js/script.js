@@ -7,8 +7,14 @@ function addBoxes (){
   for(let i = 1; i <= 100; i++){
     let boxes = document.createElement('div');
     boxes.classList.add('square');
-    console.log(boxes);
     containerGame.append(boxes);
+
+    //4.
+    boxes.addEventListener('click', function() {
+      this.classList.toggle('clicked');
+    })
   }
+  
 }
-   
+console.log(containerGame);
+
