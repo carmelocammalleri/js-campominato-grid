@@ -1,16 +1,15 @@
 //1.
 const containerGame = document.querySelector('.container');
 
-const select = document.getElementById('selectId').value;
 const btnStart = document.getElementById('btn-start');
 
 addBoxes();
 
 //2.
-function addBoxes (){
-  for(let i = 1; i <= 100; i++){
+function addBoxes (numBoxes){
+  for(let i = 1; i <= numBoxes; i++){
     let box = document.createElement('div');
-    box.classList.add('square');
+    box.classList.add(`square-${numBoxes}`);
     containerGame.append(box);
 
     //4.
@@ -31,4 +30,19 @@ function addBoxes (){
 //5.
 btnStart.addEventListener('click', function(){
   containerGame.classList.remove('hide')
+  containerGame.innerHTML= ' ';
+  lvl();
 })
+
+function lvl(){
+  let select = document.getElementById ('selectId').value;
+  console.log(select);
+
+  if (select == 1){
+    addBoxes(49);
+  } else if (select == 2){
+    addBoxes(64);
+  } else if (select == 3) {
+    addBoxes(100);
+  }
+}
