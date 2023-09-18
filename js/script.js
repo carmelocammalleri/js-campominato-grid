@@ -30,7 +30,6 @@ function addBoxes (numBoxes){
   }
 }
  
-
 //5.
 btnStart.addEventListener('click', function(){
   containerGame.classList.remove('hide')
