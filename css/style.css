@@ -16,4 +16,12 @@
   width: 500px;
   height: 500px;
   background-color: dodgerblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 1px solid white;
 }
