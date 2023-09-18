@@ -1,10 +1,12 @@
 //1.
-let containerGame = document.querySelector('.container');
+const containerGame = document.querySelector('.container');
 
 
 //2.
   for(let i = 1; i <= 100; i++){
-    containerGame = document.createElement('div')
-    console.log(containerGame);
+    let boxes = document.createElement('div');
+    boxes.classList.add('square');
+    console.log(boxes);
+    containerGame.append(boxes);
   }
    
