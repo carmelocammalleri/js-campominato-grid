@@ -48,7 +48,7 @@
   display: none;
 }
 
-.square.clicked {
+.clicked {
   background-color: blue;
   color: white;
   cursor: pointer;
