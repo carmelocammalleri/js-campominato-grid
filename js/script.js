@@ -1,6 +1,9 @@
 //1.
 const containerGame = document.querySelector('.container');
 
+const select = document.getElementById('selectId');
+const btnStart = document.getElementById('btn-start');
+
 addBoxes();
 
 //2.
@@ -13,7 +16,7 @@ function addBoxes (){
     //4.
     box.addEventListener('click', function() {
       let click = this.classList.toggle('clicked');
-      
+
     //3.
     if(click){
       box.innerHTML = [i];    
@@ -24,7 +27,5 @@ function addBoxes (){
   }
 }
 console.log(containerGame);
-//3.
 
-
-
+//5.
