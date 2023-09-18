@@ -24,9 +24,12 @@
   width: calc(100% / 10);
   height: calc(100% / 10);
   border: 1px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center ;
+  line-height: 50px;
+}
+
+.hide {
+  display: none;
 }
 
 .square.clicked {

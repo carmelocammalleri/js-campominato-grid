@@ -1,7 +1,7 @@
 //1.
 const containerGame = document.querySelector('.container');
 
-const select = document.getElementById('selectId');
+const select = document.getElementById('selectId').value;
 const btnStart = document.getElementById('btn-start');
 
 addBoxes();
@@ -26,6 +26,9 @@ function addBoxes (){
   })
   }
 }
-console.log(containerGame);
+ 
 
 //5.
+btnStart.addEventListener('click', function(){
+  containerGame.classList.remove('hide')
+})
