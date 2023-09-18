@@ -3,3 +3,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.main-wrapper {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: dodgerblue;
+}
